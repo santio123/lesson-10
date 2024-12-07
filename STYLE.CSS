@@ -1,0 +1,63 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:darkgreen
+    color:white;
+}
+
+h1{
+    color:blue
+}
+
+/* Attribute Selector */
+a{
+    color:orange;
+    text-decoration:solid;
+}
+
+a:hover {
+    color:greenyellow
+}
+
+/*Child Selector*/
+ul > li {
+    font-weight: bold;
+}
+
+/*SIBLING SELECTOR*/
+H1 + P {
+    Background-color:black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* :hover pseudo-class*/
+ul li:hover {
+    color:purple
+}
+
+/* :nth-child(n) pseudo-class*/
+ul li:nth-child(2) {
+    background-color: green;
+}
+
+
+/* :Not(Selector) pseudo-class */
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+/* ::before pseudo-element */
+ul li::before {
+    content:"🚀";
+}
+
+/* ::after pseudo-element */
+a::after {
+    content:"🌌"
+}
+
+/* ::first-letter pseudo-element*/
+p::first-letter {
+    font-size: medium;
+    color:aqua
+}
